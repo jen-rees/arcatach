@@ -1,0 +1,107 @@
+html {  }
+
+ul.featured-event li {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    min-height: 200px;
+    border: 1px solid #aaa;
+    background: #eee;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 1068px){
+  ul.featured-event li {
+      float: left;
+      display: block;
+      margin-right: 0;
+      width: 100%;
+  }
+  ul.featured-event .featured-event-title{
+    font-size: 20px;
+  }
+}
+
+
+.upcoming-events-list ul.event {
+    margin-left: 0px;
+    max-height: 1100px;
+    overflow-y: scroll;
+    -moz-box-shadow:    inset 0 0 5px #000000;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+    box-shadow:         inset 0 0 5px #000000;
+
+}
+
+.upcoming-events-list ul.event li.views-row {
+    padding: 10px 15px;
+    margin: 10px 0;
+    list-style: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+}
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background: #ccc;
+  padding: 1px;
+  -moz-box-shadow:    inset 0 0 2px #000000;
+  -webkit-box-shadow: inset 0 0 2px #000000;
+  box-shadow:         inset 0 0 2px #000000;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.upcoming-events-list .event .views-field-title-1 {
+  font-size: 20px;
+}
+
+.block--views-event-calendar-block-3 {
+  border: 3px solid #003366;
+  border-radius:3px;
+  padding: 15px 20px 25px;
+  margin: 0 0 50px;
+  background: #0059b3;
+}
+
+.block--views-event-calendar-block-3 h2 {
+  color: #fff;
+}
+.block--views-event-calendar-block-3 .field-content {
+  color: #fff;
+}
+.block--views-event-calendar-block-3 a {
+  color: #fff;
+/*     text-decoration: underline; */
+}
+
+.block--views-event-calendar-block-3 .views-field-title{
+  font-size: 36px
+}
+
+.block--views-event-calendar-block-3 .views-field-field-where {
+  font-size: 24px;
+}
+
+.block--views-event-calendar-block-3 .block__content {
+  margin:0;
+}
+
+.button {
+  letter-spacing: 1px;
+}
+
+.front .l-region--highlighted {
+  margin: 0;
+}
+
+.outer-container {
+  margin-top: 35px;
+}

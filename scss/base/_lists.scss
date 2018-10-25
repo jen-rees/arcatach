@@ -1,0 +1,25 @@
+ul,
+ol {
+	list-style: disc outside none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+/* remove bullet points from calender buttons */
+
+li.date-prev, li.date-next {
+	list-style: none;
+}

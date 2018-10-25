@@ -1,0 +1,89 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin: $small-spacing 0 10px;
+  color: $black;
+  
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child, {
+margin: 0 0 10px;
+
+}
+
+h1{
+  font-size: $base-font-size*2.5
+}
+
+h2{
+  font-size: $base-font-size*2
+}
+
+h3{
+  font-size: $base-font-size*1.5
+}
+
+h4{
+  font-size: $base-font-size*1.25
+}
+
+p {
+  margin: 0 0 $small-spacing*.5;
+  font-weight: 300;
+  
+  
+}
+.l-page{
+
+  p, a {
+  @media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+      font-size: 1.2em;
+    }
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($link-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+.l-main ul {
+  margin: 0 0 20px 20px;
+
+} 
+.l-main ul.tabs--primary{
+  margin: 0 0 10px 0;
+}

@@ -1,0 +1,49 @@
+.top-nav{
+    background: $blue;
+    font-family: 'Merriweather', serif;
+    
+
+    ul {
+        
+
+    	
+    	li{
+    		display: inline-block;
+			padding: 10px 0;
+            /* border-bottom: 0.15em solid $blue; */
+
+    		a {
+    		line-height: 1.5em;
+    		text-decoration: none;
+    		padding: 10px 1.5em;
+    		color: #fff !important;
+            background-color: $blue;
+    		
+                &.active {
+                    background-color: shade($blue, 20%);
+                }
+
+	    		&:link {
+	    			
+	    		}
+
+	    		&:hover {
+	    			background-color: shade($blue, 20%);
+                    /* border-bottom: 0.15em solid #fff; */   
+	    		}
+	    		&:active {
+	    			background-color: shade($light-blue, 20%);
+                    /* border-bottom: 0.15em solid #fff;  */  
+	    		}
+	    	}
+    	}
+    }
+
+}
+
+
+ul.menu { 
+    @include outer-container(1280px);
+    width: 90%;
+}
+

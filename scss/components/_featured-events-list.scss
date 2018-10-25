@@ -1,0 +1,45 @@
+ul.featured-event {
+	margin-bottom: 30px;
+		@include span-columns(12);
+		@include clearfix;
+		margin-left: 0px;
+
+	li {
+		@include span-columns(4)
+		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			@include span-columns(12)
+			margin-bottom: 20px;
+		}
+	}
+	.featured-event-title {
+		@include span-columns(12);
+		margin: 0;
+		background: #eee;
+		padding: 10px 20px;
+		color: $blue;
+		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			margin: -50px 0 0 0;
+			font-size: 28px;
+		}
+	}
+
+	.featured-event-image {
+		@include span-columns(12)
+		@include clearfix;
+		margin-bottom: -7px;
+
+	}
+
+	.featured-event-body {
+		@include span-columns(12)
+		float: right;
+		padding: 0 0 0 20px;
+	}
+
+}
+
+
+.views-field-field-feature-event-gallery-link {
+	@include span-columns(12)
+}
+

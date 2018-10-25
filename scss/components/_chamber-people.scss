@@ -1,0 +1,37 @@
+.about-contact {
+   
+}
+
+.google-map {
+   
+    
+}
+.people {
+    @include span-columns(12);
+    padding: 20px 0;
+
+    .people-image {
+     @include span-columns(4);
+    }
+
+    .people-title {
+        font-weight: bold;
+        @include span-columns(8);
+        padding: 0 0 0 15px;
+    }
+
+    .people-acc-title, .people-business {
+        @include span-columns(8)
+        padding: 0 0 0 15px;
+    }
+
+    h3{
+        @include span-columns(12)
+        font-size: 22px;
+        padding: 3px;
+        background: #eee;
+        border-radius: 3px;
+        clear: left;
+    }
+
+}

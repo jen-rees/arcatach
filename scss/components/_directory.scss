@@ -1,0 +1,22 @@
+.business-listing {
+	@include span-columns(3)
+	min-height: 180px;
+
+	
+}
+
+
+	
+	ul{
+		&.directory{
+
+			li {
+				list-style: none;
+				background: $light-gray;
+				border: 1px solid $medium-gray;
+				padding: 10px;
+				margin-bottom: 10px;
+
+			}
+	}
+}

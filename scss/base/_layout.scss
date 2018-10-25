@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/***** General Page Elements *****/
+
+.row-wrapper {
+	@include row();
+}
+
+.outer-container {
+	@include outer-container(1280px);
+	width: 90%;
+}
+
+.l-header, .l-main, .l-footer{
+		padding: 30px 0;
+		@include clearfix;
+	}
+
+	/* header layout */
+
+	.branding {
+		@include span-columns(3);
+
+		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			@include span-columns(9 of 12)
+			margin: 5% 0 -5% 10%;
+
+		}
+	}
+
+	.social {
+		@include span-columns(5);
+		padding-top: 15px;
+
+		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			@include span-columns(12)
+		}
+	}
+
+	.top_cta {
+		@include span-columns(4);
+		padding-top: 15px;
+
+		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			@include span-columns(12)
+		}
+	}
+
+	/* Navigation layout set in components/_top-nav.scss */
+
+	/* Main Content Layout */
+	
+	.sidebar {
+		@include span-columns(4);
+		/* padding-left: 25px; */
+
+
+		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			/* display: none; */
+			@include span-columns(12)
+			padding-left: 0px;
+			margin-top: 40px;
+		}
+		
+		.block__content {
+    		margin: 0 0 40px;
+    		/* @include span-columns(3.5 of 4);  If sidebar is on the right */
+
+    		@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+			@include span-columns(12)
+			}
+
+			}
+
+
+		.upcoming-events-list, .more-link {
+	
+
+		}
+
+		.sidebar-first {
+			@include clearfix;
+		}
+
+		.sidebar-second h2 {
+			margin: 0px;
+		}
+
+	}
+
+	.page-content {
+		@include span-columns(8);
+
+			@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+				@include span-columns(12)
+			}
+		
+		.content-right, .content-left {
+			@include span-columns(6);
+			margin-top: 30px;
+		
+
+			@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+				@include span-columns(12)
+				margin-top: 0px;
+			}
+		}
+
+	}
+
+.block--mailchimp-lists .block__content{
+			margin-bottom: 15px;
+		}
+
+.block {
+	@include clearfix;
+}
+
+
+.left, .right {
+	@include span-columns(6)
+	float: left;
+}
+
+.newsletter-column {
+	@include span-columns(3)
+
+	@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+		@include span-columns(6)
+	}
+
+}
+
+#block-block-13{
+
+	p {
+    padding-top: 10px;
+	}
+
+	h3 {
+    border-bottom: 1px solid #333;
+    line-height: 25px;
+    padding: 0 0 10px;
+    margin: 30px 0 0;
+	}
+}

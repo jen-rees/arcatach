@@ -1,0 +1,45 @@
+footer {
+	background: $blue;
+	color: $white;
+	letter-spacing: .05em;
+	@include span-columns(12);
+
+	a {
+	  color: #ccc;
+	  text-decoration: none;
+	  transition: color $base-duration $base-timing;
+	  
+	  &:active,
+	  &:focus,
+	  &:hover {
+	    color: shade(#ccc, 25%);
+	  }
+	}
+
+	.footer-wrap {
+	 	
+	
+		.footer-main {
+			@include span-columns(8);
+			@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+      		@include span-columns(12);
+    		}
+		}
+
+		.footer-secondary {
+			@include span-columns(4);
+			@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+      		@include span-columns(12);
+    		}
+		}
+	}
+}
+
+footer .block__content {
+    margin: 0 0 20px;
+  	
+}
+
+footer small {
+	font-size: .8em;
+}

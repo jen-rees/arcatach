@@ -1,0 +1,37 @@
+name = arcatach
+description = Omega 4 subtheme built for the Arcata Chamber. 
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/arcatach.reset.css
+stylesheets[all][] = css/arcatach.styles.css
+stylesheets[all][] = css/custom.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/arcatach.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[manager-menu] = Manager Menu
+regions[social] = Social
+regions[top_cta] = Top CTA
+regions[navigation] = Navigation
+regions[feature_image] = Feature Image
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[content] = Content
+regions[content_2] = Content 2
+regions[content_left] = Content Left
+regions[content_right] = Content Right
+regions[footer_main] = Footer Main
+regions[footer_secondary] = Footer Secondary

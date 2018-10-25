@@ -1,0 +1,55 @@
+.manager-menu, .menu-name-menu-manager-menu-2{
+    background: $light-gray;
+    font-size: .8em;
+    border-top: 1px solid $dark-gray;
+    border-bottom: 1px solid $dark-gray;
+
+
+
+    ul {
+        @include outer-container(90%);
+        float: right;
+
+    	
+    	li{
+    		display: inline-block;
+			margin: 0;
+			padding: .5em 0em ;
+
+
+
+            &:hover {
+                text-decoration: underline;
+                    
+                }
+
+
+
+    		a {
+    		line-height: 1.5em;
+    		text-decoration: none;
+    		
+    		color: $blue;
+    		
+	    		&:link {
+	    			
+	    		}
+
+	    		&:hover {
+	    			
+	    		}
+	    		&:active {
+	    			   
+	    		}
+                &:after {
+                content: '  |  ';
+                }
+                
+
+                
+	    	}
+    	}
+    }
+
+}
+

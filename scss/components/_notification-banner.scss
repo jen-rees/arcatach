@@ -1,0 +1,28 @@
+.l-region--highlighted {
+  background: $light-blue;
+  margin: 20px 0 0 0;
+  border-top: $dark-border;
+  border-bottom: $dark-border;
+}
+
+#block-block-19 {
+	@include outer-container(1280px);
+    width: 90%;
+
+}
+
+#block-block-19 h3 {
+    text-align: left;
+    color: #fff;
+    font-size: 32px;
+    padding: 20px 0;
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+    line-height: 1.2em;
+}
+
+#block-block-19 h3:hover {
+	color: #eee;
+
+}
+

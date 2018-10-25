@@ -1,0 +1,113 @@
+#{$all-buttons}, button, .button {
+  appearance: none;
+  background-color: $action-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 1.2em;
+  /* -webkit-font-smoothing: antialiased; */
+  font-weight: 500;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 10px 20px 0 0;
+
+  &.button-block{
+    width: 100%;
+  }
+
+  a {
+    color: #fff !important;
+    @media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+      font-size: 24px;
+      font-weight: 400;
+
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: shade($action-color, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
+
+
+.top_cta .button, .intro-text .button {
+  background: $secondary-color;
+  min-width: 200px;
+  a {
+    color: #fff !important;
+
+    @media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+      font-size: 24px;
+      font-weight: 400;
+      width: 100%;
+
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: shade($secondary-color, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+}
+
+.footer-secondary .button {
+  background: $white;
+  min-width: 200px;
+  a {
+    color: $action-color !important;
+
+    @media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+      font-size: 24px;
+      font-weight: 400;
+
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: shade($white, 20%);
+    color: $action-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+}
+

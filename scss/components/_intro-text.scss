@@ -1,0 +1,13 @@
+.intro-text {
+	padding-bottom: 15px;
+  
+}
+
+.paypal {
+	@include span-columns(6)
+
+	@media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
+		@include span-columns(10)
+	}
+	
+}
