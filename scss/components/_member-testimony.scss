@@ -47,7 +47,7 @@
 		padding: 0 0 20px 40px;
 
 		@media only screen and (max-width : $medium-screen) and (-webkit-min-device-pixel-ratio: 1){
-			@include span-columns(6)
+			@include span-columns(12)
 		}
 
 		/* @media only screen and (max-width : $large-screen) and (-webkit-min-device-pixel-ratio: 1){
